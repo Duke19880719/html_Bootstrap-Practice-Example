@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head> 
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	
+	
+    <title>SeeTaiwan</title>
+
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+  	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  	crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="SeeTaiwan.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	
+
+	<link rel="Shortcut Icon" type="image/x-icon" href=".\img\icons8-taiwan-16.png" />
+
+	
+</head>
+
+<body data-spy="scroll" data-target="#list-example">
+	<div id="slide_pic">
+		<img src=".\img\taiwan-3973014_1920.jpg" alt="1" width="100%" height="410">
+		<img src=".\img\temple-756337_1920.jpg"  alt="2" width="100%" height="410">
+		<img src=".\img\chingtienkang-1784872_1920.jpg" alt="3" width="100%" height="410">
+		<img src=".\img\taipei-3939056_1920.jpg" alt="4" width="100%" height="410">
+	</div>
+
+	<div class="TITLE_NAME">
+		<h1  class="title_str"><b>See Formosa</b></h1>      
+    	<p  class="title_sub_str">To be touring in taiwan</p>
+	</div>
+
+	<ul class="dropdown">
+		<li class="header_title"><img src=".\img\Taiwan-512.png" height="55pxpx;" style="float: left;width: auto;margin-right:30px;"><p style="margin-top: 15px;"> Formosa Promotion Group</p> </li>
+		<ul style="float: right;">
+				<li class="dropdownitem1">
+					 <p style="margin-top: 15px;"><a href="">台灣簡介</a></p>
+
+					 <ul class="drop_list">
+					 <li><p ><a  id="tw_history_a" href="">歷史</a></p></li>
+					 <li><p ><a  id="tw_geography_a"href="">地理</a></p></li>
+					 <li><p ><a  id="taiwan_culture_a" href="">文化</a></p></li>
+					</ul>
+			  	</li>
+			  	
+				<li class="dropdownitem2" style="padding-top: 25px;">
+					 <a id="tw_eat_a" href="">飲食</a>
+				</li>
+
+				<li class="dropdownitem2" style="padding-top: 25px;">
+					<a id="traffic_a" href="">交通</a>
+				</li>
+
+			<!-- 	<li class="dropdownitem2" style="padding-top: 25px;">
+					 <a  href="">藝文</a>
+				</li>
+
+				<li class="dropdownitem2"style="padding-top: 25px;">
+					 <a  href="">遊樂</a>
+				</li> -->
+		</ul>
+	
+	</ul>
+<!-- ----------------------跳出視窗------------------------ -->
+	<div id="ex1" class="modal" style="height: 75vh;width: 75vw;top: 12.5%;left: 37.5%;">
+		<p style="text-align: center ;height:95%;width: 100%;"><img  id="modal_image" src="" alt="image can't display" style="height: 100%;width:100%;"> </p>
+		<p id="title_modal" style="text-align: center;font-size:2em"></p>
+	  
+	</div>
+<!-- 	<div id="ex1" class="modal" style="height: 75vh;width: 75vw;top: 12.5%;left: 37.5%;">
+		<p style="text-align: center ;height:100%;width: 100%;"><img  id="modal_image" src=".\img\k.jpg" alt="image can't display" style="height: 100%;width:100%;"> </p>
+	  
+	</div> -->
+<!-- ------------------------------------------------------ -->
+
+	<div style="margin-left: 20px;margin-top: 50px;margin-bottom: 40px;">
+		<p ><h1 style="border-left:#ffa042  10px solid;color:#ffa042; font-weight: bold;">台灣旅遊景點推薦</h1></p>
+	</div>
+	
+	<div class="row" style="height: 854px;">
+		
+		<div class="col-3">
+			<div id="card1" class="card" style="box-shadow:5px 5px 5px #888888 ">
+				 <a id="modal1" href="#ex1" rel="modal:open">
+					<img id="img_card" src="./img/k.jpg" class="img_set"> 
+				</a>
+				<div class="card-body">
+					<p id="card_title" style="text-align:center;font-size:3vmin; ">基隆-望幽谷</p>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="col-3">
+			<div id="card2" class="card " style="box-shadow:5px 5px 5px #888888 ">
+				<img id="img_card2" src="./img/l.jpg" class="img_set">
+				<div class="card-body">
+					<p id="card_title2" style="text-align:center;font-size:3vmin;">新北市-新山夢湖</p>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="col-3">
+			<div id="card3" class="card " style="box-shadow:5px 5px 5px #888888 ">
+				<img id="img_card3" src=".\img\m.jpg" class="img_set">
+				<div class="card-body">
+					<p id="card_title3" style="text-align:center;font-size:3vmin;">新北市-濛濛湖</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div id="card4" class="card " style="box-shadow:5px 5px 5px #888888 ">
+				<img id="img_card4" src=".\img\n.jpg" class="img_set">
+				<div class="card-body">
+					<p id="card_title4" style="text-align:center;font-size:3vmin;">南投-忘憂森林</p>
+				</div>
+			</div>
+		</div>
+		<div class="w-60"></div>
+		
+<!-- ------------------------------------------------------------ -->
+		
+		<div class="col-3">
+			<div id="card5" class="card " style="box-shadow:5px 5px 5px #888888 ">
+				<img id="img_card5" src=".\img\o.jpg" class="img_set">
+				<div class="card-body">
+					<p id="card_title5" style="text-align:center;font-size:3vmin;">台中-外埔忘憂谷</p>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="col-3">
+			<div id="card6" class="card " style="box-shadow:5px 5px 5px #888888 ">
+				<img id="img_card6" src=".\img\p.jpg" class="img_set">
+				<div class="card-body">
+					<p id="card_title6" style="text-align:center;font-size:3vmin;">台南-Vanaheim愛莊園</p>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="col-3">
+			<div id="card7" class="card " style="box-shadow:5px 5px 5px #888888 ">
+				<img id="img_card7" src=".\img\q.jpg" class="img_set">
+				<div class="card-body">
+					<p id="card_title7" style="text-align:center;font-size:3vmin;">花蓮-雲山水</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div id="card8" class="card " style="box-shadow:5px 5px 5px #888888 ">
+				<img id="img_card8" src=".\img\r.jpg" class="img_set">
+				<div class="card-body">
+					<p id="card_title8" style="text-align:center;font-size:3vmin;">花蓮-六十石山</p>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+
+		<div style="position: static;margin-left: 20px;margin-top: 50px;margin-bottom: 40px;">
+			<p ><h1 style="border-left:#ffa042  10px solid;color:#ffa042; ">台灣景色推廣影片</h1></p>
+		</div>
+		
+		<div align="center">
+			<iframe width="90%" height="720px" src="https://www.youtube.com/embed/eyp3b4Ta6C4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		</div>
+
+
+
+		<div class="row" style="margin-top:75px;">
+			
+			<div class="col-2"></div>
+			<div id="tw_history" class="col-8">
+			<p ><h1 style="border-bottom:#ffa042  5px solid;color:#ffa042;padding-bottom: 5px;">台灣歷史</h1></p>
+			</div>
+			<div class="col-2"></div>
+
+			<div class="w-100"></div>
+			<div class="col-2"></div>
+		
+			<div class="col-8" >
+			  		<h3><b>17世紀以前</b></h2>
+					<p class="p_style">最早定居在台灣的原住民，其文化與海洋息息相關。據中華民國行政院的資料，以及語言學和人類學的一些研究，台灣原住民與太平洋區域住民（如馬來西亞、印度尼西亞、菲律賓、玻里尼西亞等地）的語言同屬於南島語系，而中國華南地區並不屬於南島語系。<br><br>
+						由人類學及古文化的角度，台灣原住民的缺齒、紋身、口琴、卉服、織貝、腰機紡織、貫頭衣、親族外婚、父子連名、年齡分級、老人政治、鳥占、出草(獵首)、靈魂崇拜、室內葬等特徵，都屬印度尼西亞古文化的特質。 
+					</p>
+					<br>
+					<div class="row">
+						<div class="col-1"></div>
+						<div class="col-5" ><p style="text-align: center;"><img  id="img_tooltip" data-toggle="tooltip" data-placement="bottom"  src=".\img\a1.jpg" alt="img can't display" style="width: 100%;height: 450PX;border-radius: 20PX;" title="泰雅族的勇士"></p></div>
+
+						<div class="col-5" ><p style="text-align: center;"><img  id="img_tooltip1" data-toggle="tooltip" data-placement="bottom" src=".\img\a2.jpg" alt="img can't display"  style="width: 100%;height: 450PX;border-radius: 20PX;" title="17-18世紀歐洲人繪筆下的台灣先住民"></p></div>
+						<div class="col-1"></div>
+					</div>
+							
+					<br>
+					<br>
+					<h3 ><b>荷西殖民時期</b></h3>
+					<p class="p_style">荷蘭統治時期，為增加米、糖等農作物產量，開始招募中國福建沿海一帶的居民遷往台灣開墾種植。台灣在1624年至1662年間被荷蘭人殖民，北部也曾經為西班牙占領，後來荷蘭人與西班牙人在東亞展開競爭，企圖獨占市場，於是對日本政府散播西班牙企圖顛覆日本政府陰謀，引起日本鎖國政策(僅僅允許清帝國與荷蘭)。為了進一步驅逐西班牙勢力，於是荷蘭人北上攻打西班牙，稱霸台灣。隨後鄭芝龍也大規招募移民渡海拓殖台灣。
+					</p>
+					<br>
+						<div class="row">
+							<div class ="col-1"></div>
+							<div class ="col-5" ><p style="text-align: center;"><img  id="img_tooltip3" data-toggle="tooltip" data-placement="bottom"  src=".\img\a3.jpg" alt="img can't display" style="width: 100%;height: 450PX;border-radius: 20PX;" title="荷蘭人-熱蘭遮城"></p></div>
+							
+							<div class ="col-5" ><p style="text-align: center;"><img  id="img_tooltip4" data-toggle="tooltip" data-placement="bottom" src=".\img\a4.jpg" alt="img can't display"  style="width: 100%;height: 450PX;border-radius: 20PX;" title="西班牙人-聖多明哥城"></p></div>
+							<div class ="col-1"></div>
+						</div>
+					<br>
+					<h3 ><b>鄭氏治理時期</b></h3>
+					<p class="p_style">反清復明的鄭成功經過九個月的苦戰，迫使荷蘭殖民總督揆一於同年黃曆十二月十三（西曆1662年2月1日）簽字投降，撤離台灣，自此台灣歸為鄭氏政權治理。後來於清朝康熙年間，清軍擊敗鄭氏後代，將台灣劃入清朝版圖，歸福建省管轄，結束鄭氏三代前後22年的統治。 
+					</p>
+						<br>
+						<div class="row">
+							<div class ="col-1"></div>
+							<div class ="col-5" ><p style="text-align: center;"><img  id="img_tooltip5" data-toggle="tooltip" data-placement="bottom"  src=".\img\a5.jpg" alt="img can't display" style="width: 100%;height: 450PX;border-radius: 20PX;" title="台南-延平郡王祠"></p></div>
+							
+							<div class ="col-5" ><p style="text-align: center;"><img  id="img_tooltip6" data-toggle="tooltip" data-placement="bottom" src=".\img\a6.jpg" alt="img can't display"  style="width: 100%;height: 450PX;border-radius: 20PX;" title="台南-孔廟"></p></div>
+							<div class ="col-1"></div>
+						</div>
+					<br>
+					<h3><b>清治時期</b></h3>
+					<p class="p_style">初期清朝政府對於台灣的統治採消極政策，未經許可禁止移民，但中國大陸沿海省分仍有不少人民冒險偷渡來台，在台灣西半部各地落腳定居，後來慢慢開始有向台灣東部開墾的行列，但為數不多。<br><br>
+					19世紀中葉以後，隨列強逐步由海路進逼中國，台灣在1860年起，開放部份港口開放對外通商。1874年，日本藉台灣南部原住民殺害琉球漁民事件，出兵恆春半島，即「牡丹社事件」。1884年，中法戰爭中法國軍隊出兵澎湖群島及台灣北部。這都讓清朝逐漸重視台灣在海防上的重要性。1885年，清朝設立台灣省，由劉銘傳出任首任巡撫，在台灣勵精圖治，使台灣在短短五年間成為當時中國最西化的省份。 
+					</p>
+					<br>
+
+					<h3><b>台灣民主國及日本統治時期</b></h3>
+					<p class="p_style">1894年，中日甲午戰爭爆發，清政府戰敗後，簽署馬關條約，割讓台灣及澎湖為日本的殖民地。日本接收初期，台灣官紳如丘逢甲等人抗拒割讓日本，成立「臺灣民主國」，推舉末代台灣巡撫唐景崧為總統，抵抗日本軍隊的接收，結果日軍甫登陸唐景崧立刻逃至廈門，6月26日劉永福繼任台灣民主國總統。初期日本治台任用軍人為台灣總督，以敉平當時各地的動亂組織。<br><br> 
+					台灣人民對於日本殖民政府的反抗，初期多為激烈的武力衝突（以中、南部地方勢力居多），最後都以被鎮壓瓦解或被誘導歸順收場。自1920年代開始，隨著日本進入「大正民主」時代，及第一次世界大戰後美國總統伍德羅威爾遜「民族自決」主張的影響，台灣的知識份子也展開一連串要求自治與制度改革的運動，結合偶發的勞工運動，並向民間廣為宣傳，但到了後期，因為左、右兩派的分裂，及殖民政府加強壓制力道而逐漸消沉。第二次世界大戰爆發後（1937年起），日本為加強對台灣的控制，推行皇民化運動。 
+					</p>
+						<br>
+						<div class="row">
+							<div class ="col-1"></div>
+							<div class ="col-5" ><p style="text-align: center;"><img  id="img_tooltip7" data-toggle="tooltip" data-placement="bottom"  src=".\img\a7.jpg" alt="img can't display" style="width: 100%;height: 450PX;border-radius: 20PX;" title="清朝-火車"></p></div>
+							
+							<div class ="col-5" ><p style="text-align: center;"><img  id="img_tooltip8" data-toggle="tooltip" data-placement="bottom" src=".\img\a8.jpg" alt="img can't display"  style="width: 100%;height: 450PX;border-radius: 20PX;" title="臺灣巡撫-劉銘傳"></p></div>
+							<div class ="col-1"></div>
+						</div>
+					<br>
+					<h3><b>中華民國</b></h3>
+					<p class="p_style">1945年，第二次世界大戰結束，日本戰敗並簽署《日本降書》，當時的中華民國政府代表何應欽接收台灣，而後設立與中國大陸省級行政體制不同的「台灣省行政長官公署」，並由陳儀出任台灣行政長官。
+						<br><br>
+					1947年初，因查緝私煙所引發的警民衝突，導致「二二八事件」全面爆發。一星期後，國府派兵來台鎮壓，後續還有「清鄉」行動，許多與事件無關的各界菁英與百姓也被無故殺害，或逮捕之後不經審判而被監禁、處死或就此失蹤。<br><br> 
+					1949年，在中國大陸，中國國民黨的軍隊被中國共產黨的軍隊擊潰，中國國民黨執政的中華民國政府，撤退至台灣，共產黨在大陸宣告成立中華人民共和國。1971年，聯合國即將承認中華人民共和國為中國的唯一合法代表之際（第2758號決議），國民黨政府堅持「漢賊不兩立」，宣佈退出聯合國，此後中華民國的國際地位大幅度滑落。1979年，與美國斷交，更是對中華民國的外交處境造成嚴重衝擊。台灣的黨外團體也開始透過私下發行的政論雜誌，醞釀對國民黨政府進行大規模抗爭，要求全面落實民主政治與言論自由。 
+					<br><br>
+					1991年5月1日，政府宣佈結束「動員戡亂」，結束多年部署的反攻大陸之軍事計劃，並代表政治重心正式轉移台灣本土之經營。總統李登輝推動民主化與台灣本土化政策，陸續推動六次修憲，並在1996年舉行首次總統直選。 
+					</p>
+					<br>
+						<div class="row">
+							<div class ="col-1"></div>
+							<div class ="col-5" ><p style="text-align: center;"><img  id="img_tooltip9" data-toggle="tooltip" data-placement="bottom"  src=".\img\a9.jpg" alt="img can't display" style="width: 100%;height: 450PX;border-radius: 20PX;" title="日本投降"></p></div>
+							
+							<div class ="col-5" ><p style="text-align: center;"><img  id="img_tooltip10" data-toggle="tooltip" data-placement="bottom" src=".\img\a10.jpg" alt="img can't display"  style="width: 100%;height: 450PX;border-radius: 20PX;" title="228事件"></p></div>
+							<div class ="col-1"></div>
+						</div>
+					<br>
+			</div>
+			<div class="col-2"></div>
+		</div>
+				
+<div class="row" style="margin-top:125px; ">
+	<div class="col-1">
+		
+	</div>
+	<div class="col-5">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d650351.0585620714!2d120.51316568809386!3d20.88146577914537!2m3!1f0!2f24.876778035106856!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x346ed5cb2b61c3a5%3A0xcf20ddb042be7fa0!2z6Ie654Gj!5e1!3m2!1szh-TW!2stw!4v1556202774223!5m2!1szh-TW!2stw" width="90%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<div class="col-5" id="tw_geography">
+		<p ><h1 style="border-bottom:#ffa042  5px solid;color:#ffa042;padding-bottom: 5px; ">台灣地理</h1></p>
+			<p class="p_style">台灣係由歐亞大陸板塊、菲律賓海洋板塊擠壓而隆起的島嶼，整體形狀似長條蕃薯狀，北迴歸線經過臺灣島。全島山勢高峻，山脈大多呈北北東-南南西走向、平原狹窄、地震頻繁、溫泉與死火山皆多。
+			氣候上屬高溫、多雨，最冷月的月均溫都在14℃以上，年雨量達2510mm以上。<br><br>
+			北部全年有雨，南部則集中在夏季降雨，颱風亦常在夏、秋兩季侵襲台灣。
+			由於前述地形之故，所以造成台灣有熱帶、亞熱帶、溫帶、寒帶等氣候區，而自然景觀亦因此呈現多樣化。<br><br>
+			台灣西臨台灣海峽，距中國大陸福建省平均約200公里。北邊隔東海與日本琉球群島相接。東邊為太平洋。西南邊是南海，南邊則隔巴士海峽與菲律賓相鄰。
+			在西太平洋地區由阿留申群島、千島群島、日本、琉球、菲律賓等眾多島嶼所形成的島弧花綵列島中，台灣位於中樞位置。從地緣政治的角度來看，台灣位於東亞島弧中央，為亞太經貿運輸重要樞紐。
+			</p>
+	</div>
+	<div class="col-1">
+		
+	</div>
+</div>
+
+<div  class="row" style="margin-top:125px; ">
+	<div class="col-1">
+		<audio id="player" src="#" ></audio>
+	</div>
+	<div id="taiwan_culture" class="col-10">
+		<p ><h1 style="border-bottom:#ffa042  5px solid;color:#ffa042;padding-bottom: 5px; ">台灣文化(反白內容文字,可以語音撥放)</h1></p>
+			<p class="p_style">臺灣原住民族屬於南島民族，目前約五十多萬人。依據人類學者的研究分析，原住民的屋架建築、火墾、食檳榔、紋面、皮衣製作、輪舞等文化習俗，都與傳統的南島文化相近。過去大多數的原住民都是以傳統游耕及狩獵為主要的生產方式，近年來靠近平地的原住民則與漢人的生活方式接近，但是部落組織的維繫仍然保留著。親族制度中，泰雅族、布農族為父系社會；阿美族、卑南族則為母系社會。部落組織中，魯凱族與排灣族為貴族社會；賽夏族、布農族則為氏族社會。<br><br>
+			
+			原住民重視祖靈信仰，相信祖靈居住在山上，並且會保護族人收穫豐盛。幾乎各個原住民族都有豐年祭，各族也有自己獨特的祭典，例如布農族的射耳祭（以箭射獸耳禱求獵穫豐收）與小米祭；賽夏族每二年舉辦一次矮靈祭，達悟族的飛魚祭，排灣族人的五年祭。此外，卑南族重要的祭儀有海祭、男性的猴祭及女性的鋤草祭等。南鄒族相信祖靈依附在收藏的貝珠中，因而有子貝祭；鄒族則有戰祭、收穫祭。
+			
+			另外，原住民的音樂和工藝也具有相當特色。排灣族及魯凱族的陶壺及琉璃珠製作、雕刻藝術，布農族的皮衣製作技巧、鄒族的揉皮技術。布農族的多音部合唱、阿美族的無半音五聲音階則是其音樂特色。<br><br>
+			
+			客家族群強調的文化，是以刻苦耐勞、堅韌剛強、開拓創業、團結奮進的「硬頸」精神而著稱的。客家族群從中原遷徙往南發展並保持了強大凝聚力，在語言、風俗、習慣、文學藝術等方面，都留存著豐富的中原古風，守禮重義、好學問、講倫理的風氣，是客家民系的特質。客家人自遷台之後，形成的客家莊，是強而有力的家庭組織，在昔時農業社會中，維持了穩定的生活方式，不但謀求經濟上的自給自足，也是對外共同抵禦及扶養老弱孤寡的依據。<br><br>
+			
+			
+			傳統花布包
+			在建築上，台灣客家有「宗祠」、「公廳」等客家特殊建築類型。在建築材料運用上都是因地制宜，用泥土、火磚、木、竹，都以在地資源優先考量。在建築色彩上吸收了閩南「紅磚紅瓦」的風格而非「白牆烏瓦」。在空間格局的設計上堅持著公廳的家族性公共空間的規矩，另一方面也因地制宜形成在地化客家建築風格。例如著名的新竹縣北埔天水堂姜屋、屏東縣佳冬蕭屋、六堆夥房與美濃菸樓等等客家傳統建築，都可以看到臺灣客家建築落地生根的具體軌跡。在服裝上，過去客家人有自己的日常服飾「藍衫」，但現已成為表演的象徵性穿著，近來北部地區也有「客家花布」的服裝設計以及新創造的「客家衫」，期待成為新的客家服飾。台灣在2001年成立客家委員會，並舉辦「臺灣客家文化藝術節」、「客家桐花祭」，創設「客家電視台」，使得台灣客家文化得以充分展現，台灣客家語得以復興。<br><br>
+			
+			台灣的閩南人也涵蓋閩南化的平埔族群與近四百年來由福建渡海來台之移民的後代。昔時移民主要分成漳州人和泉州人兩大支，屬漢族，一說以漢化的百越民族為主。漳州移民主要居住在中部平原地帶、北部沿海地區及蘭陽平原，故漳州腔被稱為內埔腔；泉州移民主要居住在中部沿海地區、臺北盆地，故「泉州人居住在海濱，漳州人居住在內陸平原」的說法，僅在台灣中部地區符合此一分布。在移民初期，泉州、漳州之間時有泉漳械鬥，今皆自稱為「臺灣人」，不再區分泉漳。住宅元以閩式建築為主，後空間設計融入日式塌塌米和室。<br><br>
+			</p>
+	</div>
+	<div class="col-1">
+		
+	</div>
+</div>
+	<div class="row">
+		<div class="col-1">
+			
+		</div>
+
+		<div class="col-10" style="line-height: 35px !important;font-size: 25px !important;">
+				<p id="eat"><h1 style="border-left:#ffa042  10px solid;color:#ffa042; ">台灣飲食</h1></p>
+
+				<ul class="nav nav-tabs" style="padding-right: 25px;">
+					<li class="active"><a data-toggle="tab" href="#home"><h4>歷史變遷</h4></a></li>
+					<li><a data-toggle="tab" href="#menu1"><h4>年節習俗</h4></a></li>
+					<li><a data-toggle="tab" href="#menu2"><h4>飲食特色</h4></a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id ="home" class="tab-pane fade in active">
+						 <h2><b>物產開發期（1624-1662年）</b></h2>
+						<br>
+						<h3><b>原住民的飲食特色</b></h3>
+						<p >臺灣原住民族屬於南島語系，在十六世紀以前已定居臺灣。 原住民大致以粟、山芋、甘藷、旱稻為主食，各族的飲食文化因其居住環境的不同而有所差異，靠山的原住民擅長打獵，靠海的原住民擅長補魚，將狩獵所得的山豬或補獲的漁產加上就近取得的食材及佐料，運用傳統水煮、熏烤、醃漬等方式，製作成美味的原住民風味餐。</p>
+						<p ><h3><b>荷蘭人的影響</b></h3></p>
+						<p>荷蘭人在17世紀佔領澎湖與臺灣，從印尼帶來水牛、豌豆(荷蘭豆)、番茄、芒果、青辣椒、甘蔗及稻米。此外並未在臺灣留下明確的飲食習慣與文化。</p>
+						<ul id="food_ul" style="text-align: center;">
+						    <li><img  id="img_tooltip11" data-toggle="tooltip" data-placement="bottom"  title="排灣族傳統美食 Ah-vai" src=".\img\f1.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip12" data-toggle="tooltip" data-placement="bottom"  title="酥炸斑鳩" src=".\img\f2.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip13" data-toggle="tooltip" data-placement="bottom"  title="原住民傳統美食-竹筒飯" src=".\img\f3.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						</ul>
+						<br>
+						<br>
+						<h3><b>閩菜及廣東客家菜移入期（1661-1895年）</b></h3>
+						<p>臺灣之饌。與閩粵同。沿海富魚蝦，而近山多麋鹿，故人皆食肉。饌之珍者為魚翅，為鴿蛋，皆土產也。盛宴之時，必燒小豚。而粵莊則殺貓，以其首饗貴客。閩粵之中各有佳餚，唯嗜吃之不同爾。出自《臺灣通史》，連雅堂著</p>
+						<h3><b>閩南菜的特色</b></h3>
+						<p>口味清淡不膩，湯菜居多，注重刀工及火候，常見的烹調方法為溜、蒸、炒、煨、燉、白斬（切）。除了一般常見的調味品外，蝦油、蝦醬、酸杏、紅糟、白糟、醉糟等別具特色的調味料讓閩南菜更添風味。</p>
+						<h3><b>客家菜的特色</b></h3>
+						<p>客家菜的飲食文化與其獨特的遷移歷史與嚴苛的生活環境息息相關。為了在大量的勞動工作後能迅速恢復體力，客家飲食多油多鹽，以重口味菜色居多，藉此搭配大量米食食用，並透過攝取鹽份補充流失的水份。為延長食物的保存期限而研發的各式醃製品也是客家飲食的一大特色。</p>
+						<p>平日省吃儉用的客家人只有在年節祭拜神明、祖先，或婚喪喜慶宴客時才會宰殺牲畜，為了不浪費食材，易保存及方便多次食用的特性，客家人將全豬、全雞、全鴨、魷魚各個部份妥善運用，創造出許多易保存及方便多次食用的佳餚，也因此有了「四炆四炒」這八道標準的宴客菜色</p>
+						<p>「炆」是指大鍋烹煮、持久保溫，「四炆」則是指「酸菜炆豬肚」、「炆爌肉」、「排骨炆菜頭」、「肥腸炆筍乾」，以此作法烹調而成的菜肴不但可以因應大家族人口眾多的需求，也可以吃上好幾餐；「炒」是以大火將食材混合快炒，「四炒」則是指「客家小炒」、「豬腸炒薑絲」、「鴨血炒韭菜」、「豬肺黃梨炒木耳」。</p>
+						<p>米食是客家飲食中很重要的傳統點心，種類繁多，因此民間流傳著以下的順口溜：</p>
+						<p>「頭米追、二粢、三甜粄、四惜圓、五包、六粽、七碗粄、八摸挲、九層粄、十紅桃、十一菜頭粄、十二發粄、十三芋粄、十四米糕、十五米粉、十六艾粄」</p>
+						<ul id="food_ul" style="text-align: center;">
+						    <li><img  id="img_tooltip14" data-toggle="tooltip" data-placement="bottom"  title="蘿蔔乾"  src=".\img\f4.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip15" data-toggle="tooltip" data-placement="bottom"  title="黑糖芋角" src=".\img\f5.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip16" data-toggle="tooltip" data-placement="bottom"  title="酸菜炆豬肚" src=".\img\f6.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						</ul>
+						<br>
+						<h3><b>日本飲食滲入期（1895-1945年）</b></h3>
+						<p>日治時代，人民生活困苦，當時盛產的稻米大多運往漳泉販售，臺灣人民為了節省開銷，以較廉價的蕃薯加入少量的稻米煮成蕃薯飯或蕃薯粥做為主食。</p>
+						<p>日本在臺灣殖民統治50年，教導臺灣人種植蓬萊米，也帶來白煮的日式烹調法，發展至今，生魚片、壽司、甜不辣、鐵板燒、烤秋刀魚、燒烤鰻魚、日式便當、冷豆腐等等，已成為臺灣十分普遍的菜色。</p>
+						<h3><b>北投酒家菜</b></h3>
+						<p>日治時代，日本人鍾愛北投溫泉，因此在北投地區興建了許多溫泉會館及旅店，許多政商名流到北投飲酒作樂，也因此孕育出注重排場及食材的北投酒家菜，又稱為「官菜」。北投酒家菜融合日式和菜、川菜、粵菜等口味與作法，形成獨樹一格的「北投派臺菜」，是當時的高級宴會菜，今日著名的「佛跳牆」即是當時酒家菜與閩東菜結合而成的菜肴。</p>
+			
+
+						<ul id="food_ul" style="text-align: center;">
+						    <li><img  id="img_tooltip17" data-toggle="tooltip" data-placement="bottom"  title="八僊和漢齊獻寶"  src=".\img\f7.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip18" data-toggle="tooltip" data-placement="bottom"  title="苦瓜腐乳燜紅蟳" src=".\img\f8.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip19" data-toggle="tooltip" data-placement="bottom"  title="佛跳牆" src=".\img\f9.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						</ul>
+						<br>
+						<h3><b>中國八大菜系融合期（1945-1975年）</b></h3>
+						<p>1949年國民政府來臺，帶來了中國大陸各地的烹調技術與菜色，包括京、魯、川、蘇、浙、閩、粵、湘八大菜系，其中香辣的湖南菜與四川菜，及較清淡的江浙菜更是當年十分受歡迎的菜系，隨著臺灣經濟快速的發展，八大菜系已融入臺灣飲食，形成新的臺灣飲食文化，時至今日，出自外省老兵手中的牛肉麵、麵茶粉、爆米香、豬油拌飯、烤紅薯、過水涼麵、蔥油餅、麵疙瘩、燒餅、油條、包子、饅頭、豆漿、米漿、小米粥早已成為新一代臺灣人重要的兒時回憶。</p>
+						
+						<h3><b>中國菜系介紹</b></h3>
+
+						<h3><b>廣東料理：</b></h3>
+						<p>廣東位於中國大陸的最南端，省會廣州是中國最早對外開放的港口，因為貿易活動繁盛，各種稀奇的材料從海外進來，加上廣東人向來以懂得吃自豪，所以幾百年來，粵菜一直馳名世界，歷久不衰。</p>
+						<p>粵菜的烹調方法不論煎、烤、炒、蒸、煮，都以手法細膩著稱，而所使用的食器更在中國各省菜式中以精緻聞名。另外，由於廣東人長久以來與西方菜式頗有接觸，所以能不斷地取擷西式料理的優點並加以改良進步。近年來，香港有名的廣東大廚先後被禮聘來臺，臺灣的粵菜水準已漸有青出於藍而勝於藍之勢。前來臺灣觀光，千萬不能錯過一嘗粵菜的機會。</p>
+						<h3><b>福建菜：</b></h3>
+						<p>又稱閩菜。福建位於中國東南沿海，加上丘陵眾多，以山珍海產聞名，烹調的口味以清淡、酸甜、不膩為主，著名菜色如花卷魷魚、一品鍋、清拌銀芽、燻河鰻、糟鴨、紅糟鰻魚、佛跳牆等。閩菜最常以酒糟入菜。酒糟就是老酒蒸煮殺菌後遺留的渣質，用它來調味佐菜，讓菜餚散發醇厚的香氣。福州飲食是閩菜的主流，應用海鮮及山珍，其味淡雅，偏於酸甜，其中魚丸、扁肉燕就是具有特色的傳統小吃。</p>
+						<h3><b>四川料理：</b></h3>
+						<p>近年來四川菜在海外崛起，幾乎成了中國菜的代言人，且被認為是中華料理中最具特色的一種。川菜最大的特徵，便是能以最普通的材料，做出最不尋常的美味。簡單的雞肉、青菜、豆腐等材料，經過川菜師傅的烹調以後，便成為截然不同的美味菜式。</p>
+						<p>川菜在調味上有其特殊的秘訣，在烹煮方法方面，不但花樣多，而且應用的範圍廣，所做出來的菜式，口味獨特，基本上有麻中帶辣的，有酸的，有甜的，有椒鹽的，都非常能夠促進食慾。而不同口味經過巧妙的混合，更可做出幾 10 種以上的複合口味。烹調方法以煸（炸後再煮）、燴（與高湯一起煮）為多，煎、拌、烤、炒、蒸等方法也很常見。</p>
+						<p>總而言之，川菜以獨特調理與口味著稱，如果有意來臺灣大啖一頓，川菜是絕對不可錯過的。</p>
+					<!-- 	<ul class="foodphotoListNolink">
+						    <li><span><img alt="養生雞湯" src="/userfiles/image/2014food/f_p009.jpg" /></span>養生雞湯</li>
+						    <li><span><img alt="紅燒蹄膀" src="/userfiles/image/2014food/f_p010.jpg" /></span>紅燒蹄膀</li>
+						    <li><span><img alt="東坡肉" src="/userfiles/image/2014food/f_p057.jpg" /></span>東坡肉</li>
+						</ul> -->
+						<ul id="food_ul" style="text-align: center;">
+						    <li><img  id="img_tooltip20" data-toggle="tooltip" data-placement="bottom"  title="養生雞湯"  src=".\img\f10.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip21" data-toggle="tooltip" data-placement="bottom"  title="紅燒蹄膀" src=".\img\f11.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip22" data-toggle="tooltip" data-placement="bottom"  title="東坡肉" src=".\img\f12.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						</ul>
+						<h3><b>北京料理：</b></h3>
+						<p>北京為中國的古都，也是中原與邊疆文化交會融合的中心地。北平菜融合了清朝宮廷、回族和蒙古族食物的特色，不僅菜式特別，吃的方法之多也令人目不暇給。</p>
+						<p>北京菜特別重視火候與切功。以清淡的口味和軟嫩的口感見長。烹調方法有爆、搨、烤、涮等，不一而足。而且北京菜對湯特別講究，使用大量的蔥、生薑、大蒜佐料烹煮，反映了北方人對生蔥及生大蒜的特別喜好。並且更不可錯過聞名久遠的北京烤鴨。</p>
+						<h3><b>江浙菜：</b></h3>
+						<p>江浙菜以上海菜為代表，其發源地包括長江下游及東南沿海地方，因江湖環繞四周，盛產鮮蝦、蟹鰻之類，故烹調以海產魚類為主。菜重原湯原汁，無論燉、燜、蒸、炒、燒皆講究火喉，淡而不薄，酥炸排骨不失其形，滑嫩爽脆不失其味。著名菜色如東坡肉、雪菜百頁、紹興醉雞、腐乳肉、金華火腿、乾燒魚頭等。</p>
+						<h3><b>湖南菜：</b></h3>
+						<p>亦稱湘菜。地處長江中游，物質肥沃。味道重酸辣，芡大油重，講究入味，尤其擅長燻臘肉。「燻」是湖南菜處理肉類獨特的方式，口味濃厚，為湘菜的特徵；湘菜與川菜有一點共同的特點，那便是有不少菜，都使用大量紅椒，辣味十足。<br />
+						烹調方式擅長燉、煨、炒、蒸、臘、煎、燜、燻。著名的菜色有富貴火腿、左宗棠雞、生菜蝦鬆、魚生湯、酥烤素方等。</p>
+						<br>
+						<h3><b>新臺灣飲食期（1975-迄今）</b></h3>
+						<p>經濟起飛與交通的便利帶動了觀光的發展，也將許多國際飲食帶入臺灣餐飲市場，異國餐廳如雨後春筍般林立，帶來了良性競爭的動力，也為臺灣飲食文化注入更多國際化的元素。</p>
+				<!-- 		<ul class="foodphotoListNolink">
+						    <li><span><img alt="港式點心燒賣" src="/userfiles/image/2014food/f_p054.jpg" /></span>港式點心燒賣</li>
+						    <li><span><img alt="海鮮義大利麵創意料理" src="/userfiles/image/2014food/f_p041.jpg" /></span>海鮮義大利麵創意料理</li>
+						    <li><span><img alt="日本料理蔥鮪丼" src="/userfiles/image/2014food/f_p055.jpg" /></span>日本料理蔥鮪丼</li>
+						</ul> -->
+						<ul id="food_ul" style="text-align: center;">
+						    <li><img  id="img_tooltip23" data-toggle="tooltip" data-placement="bottom"  title="港式點心燒賣"  src=".\img\f13.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip24" data-toggle="tooltip" data-placement="bottom"  title="海鮮義大利麵創意料理" src=".\img\f14.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						    <li><img  id="img_tooltip25" data-toggle="tooltip" data-placement="bottom"  title="日本料理蔥鮪丼" src=".\img\f15.jpg" style="width: 450px;height: 450PX;border-radius: 250PX;"/></li>
+						</ul>
+					</div>
+
+					<div id="menu1" class="tab-pane fade">
+						<h3><b>春節 （農曆十二月卅一日為除夕，正月初一為春節的開始）</b></h3>
+						<p>除夕是一年的最後一天，正月初一則是新的一年的開始，在農耕時代，除夕除了慶祝作物的豐收，也要準備春飯、菜肴、年糕、發粿等供品，感謝神明及祖先過去一年的庇佑，同時祈禱來年能事事順利，更上一層樓。</p>
+						<p>古時候人們在除夕夜時，會在飯桌下放置火爐，並在爐邊放些銅錢，表示人旺財旺。雖然現在已經沒有放置火爐的習慣，但是除夕夜在外的遊子都會趕回家吃年夜飯，俗稱「圍爐」，象徵團圓之意。</p>
+						
+						<br>
+						<h3><b>元宵（農曆正月十五日）</b></h3>
+						<p>正月十五是春節的最後一天，又稱為小過年。</p>
+						<p>元宵節最早的節令小吃並不是元宵，吃元宵的習俗源起於宋朝，當時這個以糯米粉加果糖製成的小吃被稱為「浮圓子」或是「湯圓」。</p>
+						<ul >
+						    <li><b>湯圓</b>
+						    <p>南方人以糯米皮包餡搓圓成龍眼般大小的圓子，稱為湯圓</p>
+						    </li>
+						    <li><b>元宵</b>
+						    <p>北方人以餡沾粉，再用篩子一層層滾出大顆的圓子，稱為元宵</p>
+						    </li>
+						</ul>
+						<br>
+						<h3><b>清明 （國曆四月五日）</b></h3>
+						<p>清明節結合了人們對祖先及自然的崇拜，是中國最重要的祭祀節日。臺灣清明的掃墓習俗分為「掛紙」及「培墓」。「掛紙」是替祖先修理房子的意思，儀式較簡單，通常準備的祭品有米糕、粿類和糕餅；「培墓」則是修整祖墓，儀式較隆重，要準備三牲、五牲、菜碗。</p>
+						<p class="foodtitle2014">清明節常見的祭品所代表的吉祥意義</p>
+						<p>1. 麵龜：長壽<br />
+						2. 將紅龜粿、麵龜分給當地的小孩子吃的習俗，稱為「揖墓粿」(又稱乞墓粿、印墓粿)，象徵「祖德流芳」。<br />
+						3. 米糕：步步高升<br />
+						4. 發粿：發財<br />
+						5. 丁仔粿：添丁<br />
+						6. 菜頭：好彩頭<br />
+						7. 韭菜：長長久久</p>
+						
+						<br>
+						<h3><b>端午（農曆五月五日）</b></h3>
+						<p>端午節源於中國遠古的祭龍日，是全民防疫祛病、祈求健康長壽的重要節日。由於端午時節瘴癘之氣較重，因此在古時候，端午節不但要划龍舟、吃粽子，還要喝雄黃酒、吃綠豆糕、鹹鴨蛋等涼性食物，以達到驅瘟解毒、退火清熱的功效，然而隨著醫藥發達與時代演進，民俗療效的色彩漸漸淡化，現在端午節只留下較具代表性的吃粽子習俗。</p>
+						<p>在臺灣，粽子的形狀及口味變化豐富，依其做法其口味的不同，可區分為臺式粽、客家粽及地方風味粽。</p>
+						<h3><b>臺式粽</b></h3>
+						<p>臺式粽依其做法不同又分為北部粽及南部粽，北部粽使用熟米、熟餡、蒸煮法制作而成，而南部粽採用生米、生料、水煮法制作而成。</p>
+						<h3><b>地方風味粽</b></h3>
+						<p>因地方的不同有多樣的口味、作法及外型。</p>
+						<h3><b>客家粽</b></h3>
+						<p>客家粽分為客家米粽、粄粽及鹼粽，客家粽裏除了鹹粽有米粒外，粄粽及堿粽則必須把米粒磨成米漿，不但吃起來較臺式粽或外省粽有嚼勁，且去除了糯米不易消化的缺點，不會造成腸胃的負擔。</p>
+						
+						<br>
+						<h3><b>中秋（農曆八月十五日）</b></h3>
+						<p>經中秋節由來已久，其成為固定節日源起於唐朝，盛行於宋朝，到了明清時期更成為中國重要的傳統節日之一。</p>
+						<p>中秋節是月娘的誕辰，古時有拜月娘的習俗，但在臺灣民間並沒有拜月娘的傳統習俗，而是拜土地公。中秋是豐收的季節，因此過去以農立國的臺灣會在中秋節準備牲禮、月餅、柚子、米粉芋等供品祭拜祖先與土地公，感謝祂們保佑秋收豐盛。</p>
+						<h3><b>月餅</b></h3>
+						<p>月餅象徵團圓，是中秋祭月和拜土地公的必備祭品。中國各地月餅種類眾多，道地的臺灣月餅有豐原月餅（綠豆椪）、鳳梨酥、蛋黃酥及雪餅。</p>
+						<h3><b>鳳梨酥</b></h3>
+						<p>將組織纖維細密的冬瓜煮熟脫水後，加入纖維較粗，酸度較高的鳳梨及糖，麥芽慢火熬煉，製作出甜而不膩的鳳梨酥，除了中秋節，也是平日最受歡迎的糕點之一。</p>
+						<h3><b>柚子</b></h3>
+						<p>臺灣的柚子起源於中國大陸，以文旦為大宗，是柚類中的變種，而果實碩大的白柚也十分受到消費者的青睞。</p>
+						<p>文旦柚是中秋節前後盛產的水果，取其「柚子」、「佑子」諧音，具有吉祥涵義，成為中秋節的應節水果。主要產地：花蓮、臺南、苗栗、宜蘭、臺北。</p>
+						<p>1980年代中期，臺灣開始興起中秋烤肉的習慣，親朋好友相聚，一邊烤肉，一邊賞月，共同分享月餅、文旦與柚子，共度月圓人團圓的美好時光。</p>
+						
+
+					</div>
+					
+					<div id="menu2" class="tab-pane fade">
+					
+						<h3><b>海鮮豐富</b></h3>
+						<p>臺灣四面環海，先天環境就擁有豐富的漁資源，加上養殖技術的進步，提高了養殖漁業的種類與產量。透過四通八達的運輸系統，讓臺灣各地都能享有多樣且新鮮的海鮮，因為新鮮所以不需要繁複的處理與過多的佐料，越單純越能吃出海鮮的甜美原味，是臺灣菜的一大特色。</p>
+						<br>
+						<h3><b>養殖海鮮</b></h3>
+						<ol>
+						    <li>牡蠣：又稱蚵仔、蠔、大牡，主要分佈在印度及西太平洋海域，臺灣則盛產於西南海岸及澎湖群島海域</li>
+						    <li>文蛤：又稱粉蟯、蚶仔、蛤蜊，主要分佈在日本、中國南部及臺灣沿岸</li>
+						    <li>九孔：又稱臺灣鮑魚、珍珠鮑魚，主要分佈在日本以南至臺灣及澎湖等各地</li>
+						    <li>虱目魚：又稱海草魚、安平魚、麻虱目仔、國聖魚，主要分佈在印度、太平洋的熱帶及亞熱帶海域，臺灣以中南部較為常見</li>
+						    <li>沙蝦：又稱蘆蝦、中蝦、麻蝦、基圍蝦，主要分佈在印度到西太平洋區，臺灣以西部及東北部沿海較多</li>
+						    <li>紅蟳：又稱處女蟳、菜蟳、青蟹，主要分佈在熱帶至亞熱帶海域之印度到西太平洋海域，臺灣四周海域均有產</li>
+						    <li>吳郭魚：又稱尼祿魚、福壽魚、南洋鯽、臺灣鯛，原產於非洲及歐亞大陸，目前已廣泛分佈於各地</li>
+						    <li>石斑：又稱鱠魚、過魚，主要分佈在印度洋及太平洋之暖水域，臺灣主要在北部、東部及南部海域</li>
+						    <li>七星鱸：又稱花鱸、青鱸、鱸魚，主要分佈在中國大陸之黃海、東海及日本之沿海和淡水域，臺灣主要分佈在西部及北部地方</li>
+						    <li>烏魚：又稱烏仔、信魚、正烏，全世界各溫、熱帶海域，臺灣四周海域皆產</li>
+						    <li>黑鯛：又稱烏格、黑格、厚唇，主要分佈在西太平洋區，臺灣四周及澎湖海域均有</li>
+						    <li>斑節蝦：又稱雷公蝦、明蝦、九節蝦，自印度到西太平洋，臺灣沿岸均有產</li>
+						    <li>草蝦：又稱草對蝦、虎蝦、烏斑節仔，主要分佈在印度到西太平洋區的熱帶及亞熱帶海域，臺灣以西部沿岸及河口域居多</li>
+						    <li>日本鰻：又稱正鰻、白鰻、白鱔，主要分佈在日本至菲律賓間的西太平洋淡水域，臺灣各河口區與其中下游皆有其分佈</li>
+						</ol>
+						<br>
+						<h3><b>漁撈海鮮</b></h3>
+						<ul>
+						    <li>鎖管：又稱小卷、透抽，主要分佈在日本中部以南之西太平洋海域，臺灣沿海均有分佈</li>
+						    <li>秋刀魚：又稱山瑪魚、散肉，主要分佈在夏威夷以北之北太平洋，以日本至阿拉斯加灣海域較多，臺灣並無分佈</li>
+						    <li>鏽斑蟳：又稱花蟹、花市仔、火燒公、十字蟹、花蟲截仔，世界各地，臺灣以西部沿海、東北角一帶產量較豐</li>
+						    <li>紅星梭子蟹：又稱三點仔、三點市仔、三點蟹，主要分佈在印度到西太平洋熱帶至亞熱帶海域，臺灣沿海均產</li>
+						    <li>蝦姑：又稱螳螂蝦、瀨尿蝦，主要分佈在熱帶及亞熱帶海域，臺灣沿岸均有產</li>
+						    <li>肉魚：又稱肉鯽、瓜仔鯧、土肉，主要分佈在西太平洋區，臺灣以西部、南部及澎湖海域較多</li>
+						    <li>赤鯮：又稱紅盤仔、赤棕，主要分佈在印度到西太平洋區，臺灣以北部西部、東北部、南部及澎湖海域為主</li>
+						    <li>白鯧：又稱正鯧、暗鯧、黑鰭，主要分佈在印度到西太平洋區，臺灣主要分佈在西部及東北部海域</li>
+						    <li>午仔：又稱竹午、大午，主要分佈在印度到西太平洋區，臺灣則分佈於南部、西部及澎湖海域等</li>
+						    <li>鸚哥魚：又稱鸚哥、青衣，主要分佈在印度泛太平洋海域，臺灣則各地及離島岩礁海域也都有分佈</li>
+						    <li>七星斑：又稱紅鱠、紅格仔、過魚，主要分佈在印度洋到太平洋之熱帶海域，臺灣以南部海域為主</li>
+						</ul>
+						<br>
+						<br>
+						<h3><b>醬菜文化</b></h3>
+						<p>臺灣早年農業社會，物質較貧乏，農耕家庭深知每一粒米，每一道菜肴，都是上天恩賜的禮物，因此養成愛物惜物，勤儉不浪費的良好習慣。</p>
+						<p>醬菜文化就是這個時空背景下的產物，當食物盛產時，利用鹽或是醬醃的方式製成醬菜，不但可以延長食物的保存期限，醬菜本身較鹹的口味更是辛苦勞動後或天氣炎熱時的最佳開胃菜。</p>
+						<p>臺語俗話說：「吃魚吃肉也要鹹菜甲」，足見醬菜在臺菜中的重要地位。醬菜與其他食材的完美搭配產生獨特風味，令許多老饕再三回味。</p>
+						<br>
+						<h3><b>節令食補</b></h3>
+						<p>臺灣講究食補最早是受到閩菜的影響，近年來隨著經濟條件的改善，越來越多人開始注重養生，認同醫食同源，五行調和的觀念。</p>
+						<h3><b>臺灣常見藥膳</b></h3>
+					
+						<h3><b>日常保健 四神湯</b></h3>
+					
+						<p>功效：健胃補脾，增進食欲，恢復體力。</p>
+						<p>參考藥材：淮山、芡實、蓮子、茯苓（中藥四臣，故四神湯原稱四臣湯）</p>
+						<p>參考食材：:豬肚、豬腸</p>
+					
+						
+						<h3><b>藥燉排骨</b></h3>
+						
+						<p>功效：行氣補血、調養血氣，防止老化。</p>
+						<p>參考藥材：當歸、川芎、熟地、甘草、黃耆、陳皮、牛七、桂枝、枸杞、紅棗、玉竹。</p>
+						<p>參考食材：豬排骨</p>
+					
+						
+						<h3><b>四物雞湯</b></h3>
+					
+						<p>功效:補血益氣、促進血液迴圈、增強體力。</p>
+						<p>參考藥材：川芎、白芍、當歸、熟地、 枸杞</p>
+						<p>參考食材：烏骨雞</p>
+					
+					</div>
+				</div>
+
+		</div>
+
+		<div class="col-1">
+			
+		</div>
+	</div>
+
+
+	<div id="row_traffic" class="row" style="margin-top:100px;height:1100px;width: 100%;">
+		<div class="col-1">
+			
+		</div>
+		<div class="col-10">
+			<p id="traffic"><h1 style="border-bottom:#ffa042  10px solid;color:#ffa042; ">台灣交通</h1></p>
+
+		<div class="container-fluid">
+			<div class="row">
+				
+				<nav class="col-2 navbar" id="myScrollspy" >
+					<ul class="nav nav-pills nav-stacked" >
+						<li class="active">
+							<a href="#section1" style="font-size:60px;"><img src=".\img\AA1.jpg" style="width: 50px;height50px;">捷運</a>
+						</li>
+						<li >
+							
+							<a href="#section2" style="font-size:60px;"><img src=".\img\AA2.jpg" style="width: 50px;height50px;">火車</a>
+						</li>
+						<li >
+							<a href="#section3" style="font-size:60px;"><img src=".\img\AA3.jpg" style="width: 50px;height50px;">高鐵</a>
+						</li>
+					</ul>	
+				</nav>
+
+				<div id="outer_container" class="col-10" data-offset="20" style="left: 0px;">
+						<div  id="inner_container" data-spy="scroll" data-target="#myScrollspy"  style="height: 1000px;overflow-y: scroll;margin-left: 0px;">
+					<div id="section1">
+		                <h1><b>台北捷運、桃園機場捷運、高雄捷運南北城市旅行最便捷的交通工具！</b></h1>
+						<img src=".\img\MRT1.jpg" alt="image can't display" style="width: 100%;height:800px;">
+		            	<h3>台北捷運3種MRTPass：捷運、公車、觀光巴士、景點門票，依實際旅遊需求購買！省錢又方便！</h3>
+		            	<img src=".\img\mrt-a.jpg" alt="image can't display" style="width: 100%;height:300px;border-radius: 100PX;">
+		            	<br>
+		            	<p style="text-align: center"><img src=".\img\mrt-b.jpg" alt="image can't display" style="width: 80%;height:1000px;border-radius: 50PX;"></p>
+		            	<ul>
+						<li>
+						<h3 ><b>第一種：台北捷運MRTPass僅能搭乘捷運</b></h3>
+						<ul>
+						<li>
+						<h4><a href="https://www.metro.taipei/cp.aspx?n=CEF54168B23F73B4&amp;s=9D540D31C5F81237"><h4>一日票：150元，僅能使用至當日營業結束。</h4></a></h4>
+						</li>
+						<li>
+						<h4><a href="https://www.metro.taipei/cp.aspx?n=CEF54168B23F73B4&amp;s=9D540D31C5F81237"><h4>24小時180元/48小時280元/72小時380元</h4></a></h4>
+						</li>
+						<li><h4>於效期內僅能搭乘台北捷運</h4></li>
+						<li><h4>不可以搭桃園機場捷運</h4></li>
+						<li><h4>不可以搭台北市公車</h4></li>
+						</ul>
+						</li>
+						</ul>
+						<h3><b>第二種：北北基好玩卡(交通暢遊版)Taipei Fun Pass｜可搭乘捷運+市公車+台灣好行觀光巴士</b></h3>
+						<p style="text-align: center"><img src=".\img\mrt-c.jpg" alt="image can't display" style="width: 100%;height:700px;border-radius: 50PX;"></p>
+
+						<ul style="font-size: 25px;">
+						<li>
+						<a href="https://goo.gl/JpDgPa">一日卡180元/二日卡310元/三日卡440元/五日卡700元</a>
+						</li>
+						<li>
+						<a href="https://goo.gl/nAdxm1">一日卡+貓空纜車350元</a>
+						</li>
+						<li>可於效期內無限搭乘台北捷運</li>
+						<li>不可以搭桃園機場捷運</li>
+						<li>不可以搭乘4位數國道客運</li>
+						<li>可於效期內無限搭乘台北市公車</li>
+						<li>可於效期內無限搭乘新北市公車</li>
+						<li>可於效期內無限搭乘北台灣五條台灣好行觀光巴士
+						<ol>
+						<li><a href="https://goo.gl/5j5jXq">北投竹子湖線</a></li>
+						<li><a href="https://goo.gl/5j5jXq">木柵平溪線</a></li>
+						<li><a href="https://goo.gl/5j5jXq">皇冠北海岸線</a></li>
+						<li><a href="https://goo.gl/5j5jXq">黃金福隆線</a></li>
+						<li><a href="https://goo.gl/5j5jXq">龍宮尋寶線</a></li>
+						</ol>
+						</li>
+						</ul>
+						</li>
+						</ul>
+
+
+						<ul>
+						<li>
+						<h3><b>第三種：北北北基好玩卡<span style="color: #99cc00;">(無限暢遊版)</span>Taipei Fun Pass｜可搭乘捷運+市公車+台灣好行觀光巴士+暢遊台北12張景點門票</b></h3>
+						<p style="text-align: center"><img src=".\img\mrt-f.jpg" alt="image can't display" style="width: 100%;height:500px;border-radius: 50PX;"></p>
+
+						<ul style="font-size: 25px;">
+						<li>
+						<h4><a href="https://goo.gl/Na97qV">一日卡1200元/二日卡1600元/三日卡1900元</a></h4>
+						</li>
+						<li>包含北北基好玩卡(交通暢遊版)所有可以無限搭乘的交通</li>
+						<li>另外可於效期內享<a href="https://goo.gl/5j5jXq">北台灣12個熱門景點</a>免費參觀一次
+						<ol>
+						<li>台北101观景台(Taipei 101)</li>
+						<li>國立故宮博物院(National Palace Museum)</li>
+						<li>士林官邸正館(Main Building of Chiang Kai-Shek Shiline Residence)</li>
+						<li>美麗華百樂園(Miramar Entertainment Park)</li>
+						<li>兒童新樂園(Taipei Children’s Amusement Park)</li>
+						<li>淡水古蹟博物館(Tamsui Historical Museum)</li>
+						<li>淡水漁人碼頭來回船票(Tamsui Fisherman’s Wharf)</li>
+						<li>黃金博物館(Gold Museum)</li>
+						<li>野柳地質公園(Yeliu Geoark)</li>
+						<li>朱銘美術館(Juming Museum)</li>
+						<li>波麗士天燈館(Sky Lantern Police Station)</li>
+						<li>國立海洋科技博物館主題館(National Museum of Marine Science &amp; Technology)</li>
+						</ol>
+						</li>
+						<li><a href="https://goo.gl/xAUCqS">台北景點票券！線上買免排隊！即買即用超方便</a></li>
+						</ul>
+						</li>
+						</ul>
+
+		            </div>
+		            <div id="section2">
+		             
+
+		               <h1>台鐵TR-PASS！坐火車環島的旅客必買的暢遊券！</h1>
+<div id="attachment_554" style="width: 1119px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-554" class="size-full wp-image-554" src="https://blog.welcometw.com/wp-content/uploads/2018/01/圖片1.jpg" alt="" width="1109" height="770" srcset="https://blog.welcometw.com/wp-content/uploads/2018/01/圖片1.jpg 1109w, https://blog.welcometw.com/wp-content/uploads/2018/01/圖片1-300x208.jpg 300w, https://blog.welcometw.com/wp-content/uploads/2018/01/圖片1-768x533.jpg 768w, https://blog.welcometw.com/wp-content/uploads/2018/01/圖片1-1024x711.jpg 1024w" sizes="(max-width: 1109px) 100vw, 1109px" /><p id="caption-attachment-554" class="wp-caption-text"></div>
+<div style="width: 1694px" class="wp-caption alignnone"><img src="./img/train_map.jpg"><p class="wp-caption-text">台鐵路線圖</p></div>
+<p>台鐵可以說是貫穿台灣大大小小城市的重要交通工具。台鐵依車種、車速和停留的站點大小分為區間車、莒光號、自強號、太魯閣號、普悠瑪號。許多環島旅客必買的TR-PASS，分為3日版和5日版，TR-PASS可以搭乘上述的台鐵各級列車。對於國際旅客來說使用上非常的方便。<a href="http://twtraffic.tra.gov.tw/twrail/TW_Quicksearch.aspx">&gt;&gt;台鐵時刻表及票價查詢</a></p>
+<table width="335">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="3" width="335">
+<h3>TR-PASS-火車</h3>
+</td>
+</tr>
+<tr>
+<td>名稱</td>
+<td style="text-align: center;"><a href="https://www.railway.gov.tw/Taipei/cp.aspx?sn=12050">TR-PASS-3 days(三日版)</a></td>
+<td style="text-align: center;"><a href="https://www.railway.gov.tw/Taipei/cp.aspx?sn=12050">TR-PASS-5 days(五日版)</a></td>
+</tr>
+<tr>
+<td>價格</td>
+<td style="text-align: center;">1800元</td>
+<td style="text-align: center;">2500元</td>
+</tr>
+<tr>
+<td>說明</td>
+<td style="text-align: center;" colspan="2" width="242"><strong>於可使用日期期限內，得不限區間及次數劃位搭乘本局各級列車(區間車、莒光號、自強號、太魯閣號、普悠瑪號)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>另外，台鐵也針對熱門的<span style="font-size: 1rem;">鐵路支線規劃單日周遊券，可於當日無限搭乘支線各站，方便遊客在景點遊玩使用。</span></p>
+<table width="360">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="5" width="360">
+<h3>OneDayPass-火車</h3>
+</td>
+</tr>
+<tr>
+<td>名稱</td>
+<td><a href="https://www.railway.gov.tw/Taipei/cp.aspx?sn=12103">火車-平溪線</a></td>
+<td><a href="https://www.railway.gov.tw/Taipei/cp.aspx?sn=12103">火車-深澳線</a></td>
+<td><a href="https://www.railway.gov.tw/Taipei/cp.aspx?sn=12103">火車-內灣線</a></td>
+<td><a href="https://www.railway.gov.tw/Taipei/cp.aspx?sn=12103">火車-集集線</a></td>
+</tr>
+<tr>
+<td width="85">旅遊景點</td>
+<td width="85"> 菁桐車站、十分老街、十分瀑布、 猴硐貓村</td>
+<td width="85">潮境公園、海科館、忘憂谷</td>
+<td width="85">合興愛情車站、內灣老街、內灣吊橋</td>
+<td width="85">車埕車站、明潭水庫、二水老街、車城老街</td>
+</tr>
+<tr>
+<td>價格</td>
+<td>80元</td>
+<td>80元</td>
+<td>95元</td>
+<td>90元</td>
+</tr>
+</tbody>
+</table>
+
+		            </div>
+
+		            <div id="section3">
+		              <h1><a href="https://www.thsrc.com.tw/index.html">台灣高鐵THSR PASS國際旅客專屬必備交通票券</a></h1>
+<div id="attachment_555" style="width: 1010px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-555" class="size-full wp-image-555" src="https://blog.welcometw.com/wp-content/uploads/2018/01/高鐵.jpg" alt="" width="1000" height="750" srcset="https://blog.welcometw.com/wp-content/uploads/2018/01/高鐵.jpg 1000w, https://blog.welcometw.com/wp-content/uploads/2018/01/高鐵-300x225.jpg 300w, https://blog.welcometw.com/wp-content/uploads/2018/01/高鐵-768x576.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></div>
+<p>台灣高鐵可以說是來台灣旅遊一定會使用到的交通工具，台北到高雄直達車只需要1個半小時，就算只住台北想要當天來回都沒有問題。高鐵目前有三種不同停站的模式，站站停、跳蛙式、直達車；不同車種停靠的站點不同，如果你是在台北、台中、高雄上車的旅客，一定要特別注意列車有沒有停靠你要去的地方。最好上車前先查好車次，以免上錯車。<a href="https://m.thsrc.com.tw/tw/TimeTable/SearchResult">&gt;&gt;高鐵時刻表及票價查詢</a></p>
+<div style="width: 280px" class="wp-caption alignnone"><a href="http://library.taiwanschoolnet.org/cyberfair2015/lcvsM20202/images/4567645.png"><img class="size-full" src="http://library.taiwanschoolnet.org/cyberfair2015/lcvsM20202/images/4567645.png" width="270" height="413" /></a><p class="wp-caption-text">台灣高鐵路線圖</p></div>
+<p>&nbsp;</p>
+<div style="width: 759px" class="wp-caption alignnone"><a href="http://pgw.udn.com.tw/gw/photo.php?u=http://uc.udn.com.tw/photo/2015/10/30/1/1460636.jpg&amp;sl=W&amp;fw=750"><img class="size-full" src="http://pgw.udn.com.tw/gw/photo.php?u=http://uc.udn.com.tw/photo/2015/10/30/1/1460636.jpg&amp;sl=W&amp;fw=750" width="749" height="459" /></a><p class="wp-caption-text">台灣高鐵車種</p></div>
+<table width="640">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="5" width="194">THSR PASS</td>
+</tr>
+<tr>
+<td>天數</td>
+<td>
+<h2 class="ticket-title" style="padding-top: 1.5em;">Flexible 2-day pass</h2>
+</td>
+<td>
+<h2 class="ticket-title" style="padding-top: 1.5em;">3-day pass</h2>
+</td>
+<td>
+<h2 class="ticket-title" style="padding-top: 1.5em;">5-day standard joint pass</h2>
+</td>
+<td>
+<h2 class="ticket-title" style="padding-top: 1.5em;">5-day express joint pass</h2>
+</td>
+</tr>
+<tr>
+<td>名稱</td>
+<td><a href="https://funpass.travel.taipei/tour/aZ7?utm_source=Marina-FontripBlog-article&amp;utm_medium=Marina-FontripBlog-article&amp;utm_campaign=Marina-FontripBlog-article&amp;utm_term=Marina-FontripBlog-article&amp;utm_content=Marina-FontripBlog-article">高鐵彈性2日券</a></td>
+<td><a href="https://funpass.travel.taipei/tour/34m?utm_source=Marina-FontripBlog-article&amp;utm_medium=Marina-FontripBlog-article&amp;utm_campaign=Marina-FontripBlog-article&amp;utm_term=Marina-FontripBlog-article&amp;utm_content=Marina-FontripBlog-article">高鐵3日券</a></td>
+<td><a href="https://funpass.travel.taipei/tour/K8G?utm_source=Marina-FontripBlog-article&amp;utm_medium=Marina-FontripBlog-article&amp;utm_campaign=Marina-FontripBlog-article&amp;utm_term=Marina-FontripBlog-article&amp;utm_content=Marina-FontripBlog-article"><strong>雙鐵</strong>標準5日</a></td>
+<td><a href="https://funpass.travel.taipei/tour/gEM?utm_source=Marina-FontripBlog-article&amp;utm_medium=Marina-FontripBlog-article&amp;utm_campaign=Marina-FontripBlog-article&amp;utm_term=Marina-FontripBlog-article&amp;utm_content=Marina-FontripBlog-article"><strong>雙鐵</strong>特級5日</a></td>
+</tr>
+<tr>
+<td>使用說明</td>
+<td width="121">7日內任選2日搭乘</td>
+<td width="121">連續3日使用</td>
+<td width="102">連續5日使用</td>
+<td width="102">連續5日使用</td>
+</tr>
+<tr>
+<td>價格</td>
+<td>2500元</td>
+<td>2200元</td>
+<td>2800元</td>
+<td>3600元</td>
+</tr>
+<tr>
+<td>火車          -區間車</td>
+<td></td>
+<td></td>
+<td>V</td>
+<td>V</td>
+</tr>
+<tr>
+<td>火車          -莒光號</td>
+<td></td>
+<td></td>
+<td>V</td>
+<td>V</td>
+</tr>
+<tr>
+<td>火車          -自強號</td>
+<td></td>
+<td></td>
+<td></td>
+<td>V</td>
+</tr>
+<tr>
+<td>高鐵          -自由座</td>
+<td>V</td>
+<td>V</td>
+<td>V</td>
+<td>V</td>
+</tr>
+<tr>
+<td>高鐵          -對號座</td>
+<td>V</td>
+<td>V</td>
+<td>V</td>
+<td>V</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+		            </div>
+				</div>
+				</div>
+					
+				
+
+			
+
+				
+		</div>
+
+	</div>
+
+		</div>
+			<div class="col-1">
+			
+		</div>
+	</div>
+	
+	
+	
+
+
+	<div style="position:static;height: 110px;width: 100%;bottom: 0;"></div>
+
+  	<footer id="custom_footer">
+	<p id="footer_p">地址: 台北市中正區重慶南路一段122號</p>
+	<p id="footer_p">聯絡電話: （02）2311-3731</p>
+	</footer>
+
+	
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+
+	<script type="text/javascript" src="js1.js"></script>
+
+
+</body>
+</html>
+
+
